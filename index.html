@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Meal App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Meal App</h1>
+      <div class="row">
+        <div class="col-sm-6">
+          <form>
+            <div class="form-group">
+              <label for="mealName">Meal Name</label>
+              <input type="text" class="form-control" id="mealName" placeholder="Enter meal name">
+            </div>
+            <div class="form-group">
+              <label for="mealDescription">Meal Description</label>
+              <textarea class="form-control" id="mealDescription" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Meal</button>
+          </form>
+        </div>
+        <div class="col-sm-6">
+          <form>
+            <div class="form-group">
+              <label for="searchMeal">Search Meal</label>
+              <input type="text" class="form-control" id="searchMeal" placeholder="Enter meal name to search">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+      </div>
+      <hr>
+      <div id="mealList">
+        <h2>Meal List</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Meal Name</th>
+              <th>Meal Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
